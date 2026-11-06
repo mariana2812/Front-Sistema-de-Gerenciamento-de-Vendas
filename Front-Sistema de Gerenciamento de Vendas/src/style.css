@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-roxo: #6d4aff;
+  --color-roxo-claro: #f1edff;
+  --color-lima: #c6f432;
+  --color-texto: #18181b;
+  --color-texto-claro: #71717a;
+  --color-borda: #ececf0;
+  --color-fundo: #f4f4f6;
+  --color-branco: #fff;
+  --color-verde: #16a34a;
+  --color-vermelho: #dc2626;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fundo);
+  font-size: 14px;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+input,
+select {
+  height: 36px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--color-borda);
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: var(--color-branco);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-roxo);
+}
+
+/* CARD BRANCO USADO EM VÁRIAS TELAS */
+.card {
+  background-color: var(--color-branco);
+  border: 1px solid var(--color-borda);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+/* TABELAS DAS TELAS DE LISTAGEM */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-texto-claro);
+  font-size: 13px;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--color-borda);
+}
+
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--color-borda);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.positivo {
+  color: var(--color-verde);
+}
+
+.negativo {
+  color: var(--color-vermelho);
+}
